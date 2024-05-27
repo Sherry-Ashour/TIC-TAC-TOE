@@ -1,0 +1,95 @@
+:root {
+  --Lbg: hsl(258, 100%, 89%);
+  --ltc: black;
+  --lsc: hsl(258, 63%, 77%);
+  --Lsh: rgb(211, 152, 248);
+  --button-bg-light: black;
+  --button-text-light: white;
+}
+
+body.darkm {
+  --Lbg: rgb(19, 0, 30);
+  --ltc: white;
+  --lsc: rgb(32, 1, 50);
+  --Lsh: rgb(49, 0, 79);
+  --button-bg-light: white;
+  --button-text-light: black;
+}
+
+body {
+  background-color: var(--Lbg);
+  color: var(--ltc);
+}
+
+* {
+  font-family: "Jersey 15", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.game {
+  width: 300px;
+  background-color: var(--Lbg);
+  margin: auto;
+  margin-top: 150px;
+  text-align: center;
+  color: var(--ltc);
+}
+
+.title {
+  margin-bottom: 20px;
+  font-size: 65px;
+}
+
+.squares {
+  font-size: 70px;
+  width: 90px;
+  height: 90px;
+  margin: 5px;
+  float: left;
+  background-color: var(--lsc);
+}
+
+.squares:hover {
+  cursor: pointer;
+  background-color: var(--Lsh);
+  transition: 0.3s ease;
+}
+
+.original-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 0px;
+  width: 100px;
+  height: 40px;
+  font-weight: bold;
+  border: none;
+  border-radius: 15px;
+  transition: 0.3s;
+  background-color: var(--button-bg-light);
+  color: var(--button-text-light);
+  position: relative;
+  top: 50px;
+  left: 98px;
+}
+
+body.darkm .original-button {
+  background-color: var(--button-bg-light);
+  color: var(--button-text-light);
+}
+
+.original-button:hover {
+  color: #fff;
+  background-color: var(--Lsh);
+}
+
+.mimg {
+  position: absolute;
+  right: 55px;
+  top: 25px;
+  width: 40px;
+}
